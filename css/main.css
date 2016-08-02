@@ -219,20 +219,18 @@ a:hover {
 
 
 /*FORMS*/
-.left-form {
-    display: inline;
-    float: left;
-    position: absolute;
-}
-
-.right-form {
+.col-md-6 {
     display: inline-block;
     float: left;
+    width: 50%;
 }
 
 
 /*FOOTER*/
-
+.footer {
+    text-align: center;
+    font-weight: bold;
+}
 
 
 
