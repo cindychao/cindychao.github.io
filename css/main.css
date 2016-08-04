@@ -222,30 +222,45 @@ a:hover {
 /*FORMS*/
 
 input, textarea {
-    display: block;
+    display: inline-block;
+    width: 500px;
+    max-width: 100%;
+    min-width: 300px;
+    padding: 10px 0 10px 10px;
 }
 
 form {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     text-align: center;
 }
-
-/*li {
-    list-style: none;
-    margin-bottom: 10px;
-}*/
 
 .row {
     max-width: 100%;
     padding: 0 300px;
 }
 
+#button {
+    clear: both;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+#name, #email, #subject {
+    margin-top: 10px;
+}
+
+#message {
+    padding-bottom: 40px;
+    margin-top: 10px;
+}
 
 /*FOOTER*/
 .footer {
     text-align: center;
     font-weight: bold;
 }
+
+
 
 
 
