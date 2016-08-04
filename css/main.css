@@ -9,7 +9,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+* {
+    box-sizing: border-box;
+}
 
 html {
     color: #000000;
@@ -128,8 +130,6 @@ h3 {
     text-transform: lowercase;
 }
 
-
-
 /*LAYOUT (columns, floats, etc.)*/
 
 
@@ -166,12 +166,12 @@ header {
 
 
 nav {
-    width: 94%;
+    width: 100%;
     background-color: #FFFFFF;
     z-index: 999;
     position: fixed;
     top: 0;
-    padding-left: 140px;
+    padding-left: 200px;
     text-align: center;
     border-bottom: 1px solid #000000;
 }
@@ -188,13 +188,12 @@ nav a {
 }
 
 .park{
-    width: 10%;
+    width: 17%;
 }
 
 .about {
-    width: 10%;
+    width: 17%;
     float: right;
-    margin-right: 10px
 }
 
 a:visited {
@@ -204,7 +203,9 @@ a:visited {
 a:hover {
     color: #6C7F5B;
 }
-
+/*.hamburger {
+  display: none;
+}*/
 
 
 /*SECTION*/
@@ -240,7 +241,6 @@ form {
     max-width: 60%;
     margin: 0 auto;
 }
-
 
 #name, #email, #subject {
     margin-top: 10px;
@@ -406,9 +406,184 @@ form {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 1289px) {
     /* Style adjustments for viewports that meet the condition */
+header {
+    background-size: 100%;
+    max-height: 70vh;
 }
+nav {
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    padding-left: 180px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+nav a {
+    display: inline-block;
+    padding: 20px 30px;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px;
+}
+
+.park{
+    width: 20%;
+}
+
+.about {
+    width: 17%;
+    float: right;
+}
+.center {
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-50%);
+    top: 40%;
+}
+.center h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+}
+.center h2 {
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width: 950px) {
+header {
+    max-height: 60vh;
+}
+
+nav {
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    padding-left: 1px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+nav a {
+    display: inline-block;
+    padding: 20px 30px;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px;
+}
+
+.park{
+    width: 20%;
+}
+
+.about {
+    display: none;
+}
+.center {
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-50%);
+    top: 45%;
+}
+.center h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+}
+.center h2 {
+    font-size: 35px;
+}
+.section-container2, .section-container {
+    padding: 20px 100px 40px 100px;
+}
+p {
+    font-size: 17px;
+}
+}
+
+@media only screen and (max-width: 820px) {
+header {
+    max-height: 50vh;
+}
+.section-container2, .section-container {
+    padding: 10px 75px 30px 75px;
+}
+h2 {
+    font-size: 35px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    /* Style adjustments for viewports that meet the condition */
+header {
+    max-height: 40vh;
+    min-width: 575px;
+}
+nav a {
+    display: inline-block;
+    padding: 10px 30px 20px 30px;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    font-size: 13px;
+}
+.park{
+    width: 23%;
+}
+
+.about {
+    width: 17%;
+    float: right;
+}
+.center {
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.center h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+.center h2 {
+    display: none;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    font-size: 15px;
+}
+
+/*.hamburger {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    z-index: 1000;
+}*/
+/*nav a {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+}*/
+  
+.slide-down {
+    height: 262px;
+}
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
