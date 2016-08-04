@@ -226,7 +226,8 @@ input, textarea {
     width: 500px;
     max-width: 100%;
     min-width: 300px;
-    padding: 10px 0 10px 10px;
+    padding: 10px;
+    border: 1px solid #000000;
 }
 
 form {
@@ -239,11 +240,6 @@ form {
     padding: 0 300px;
 }
 
-#button {
-    clear: both;
-    max-width: 100px;
-    min-width: 100px;
-}
 
 #name, #email, #subject {
     margin-top: 10px;
@@ -252,6 +248,12 @@ form {
 #message {
     padding-bottom: 40px;
     margin-top: 10px;
+}
+
+#button {
+    clear: both;
+    max-width: 100px;
+    min-width: 100px;
 }
 
 /*FOOTER*/
